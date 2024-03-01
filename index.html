@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Clima App</title>
+</head>
+<body>
+    
+    <div class="h-screen flex items-center justify-center containerr">
+        <div class="border container max-w-screen-sm mx-auto p-8 bg-white rounded-md">
+            <div class="text-5xl font-extrabold text-center">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                Clima App 
+                </span>
+            </div>
+            <br>
+         
+            
+            <form action="POST" id="formulario" action="#">
+
+
+                <div>
+                    <div class=" text-center py-4 lg:px-4 " id="resultado">
+                        <div class="p-2 rounded-full bg-purple-300 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                          <span class="flex rounded-full bg-purple-700 uppercase px-2 py-1 text-xs font-bold mr-3">Aviso Importante</span>
+                          
+                          <span class="font-semibold mr-2 text-left text-black flex-auto">Por favor eliga la ciudad y el pais</span>
+                        </div>
+                      </div>
+                    
+    
+                </div>
+
+                <input type="text" id="ciudad" class="mt-1 p-3 border rounded-xl w-full focus:outline-none focus:ringfocus:border-green-300 required" placeholder="Ingresa la ciudad">
+
+                <div class="mt-5">
+                    <label for="" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Selecciona un  Pais</label>
+                    <select id="pais" class=" required bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Elegì un Pais</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="ES">España</option>
+                        <option value="MX">México</option>
+                        <option value="CA">Canadá</option>
+                        <option value="BR">Brasil</option>
+                        <option value="PE">Perú</option>
+                        <option value="CL">Chile</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="VE">Venezuela</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="HN">Honduras</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="PA">Panamá</option>
+                        <option value="DO">República Dominicana</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="CU">Cuba</option>
+                        <option value="PT">Portugal</option>
+                        <option value="FR">Francia</option>
+                        <option value="GB">Reino Unido</option>
+                        <option value="DE">Alemania</option>
+                        <option value="IT">Italia</option>
+                        <option value="JP">Japón</option>
+                        <option value="CN">China</option>
+                        <option value="RU">Rusia</option>
+                        
+                    </select>
+                    
+                </div>
+             
+                <button class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm p-3 mt-4  w-full"         
+                type="submit" ">Buscar Clima</button>
+                
+          
+            </form>
+        
+            
+             
+        
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
